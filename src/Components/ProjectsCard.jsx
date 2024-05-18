@@ -1,7 +1,7 @@
 import React from 'react';
-import CardHeading from "./snipped/CardHeading";
-import CardTitle from "./snipped/CardTitle";
-import SocialLinks from './header/SocialLinks';
+import CardHeading from "../snippets/CardHeading";
+import CardTitle from "../snippets/CardTitle";
+import SocialLinks from '../snippets/SocialLinks';
 import { Row, Col } from 'react-bootstrap';
 function ProjectsCard() {
   const backgroundImageUrl = 'https://t3.ftcdn.net/jpg/07/24/43/76/240_F_724437676_6aTqgYhJDWKZBgC798sfb7lpfz8FCdNq.jpg';

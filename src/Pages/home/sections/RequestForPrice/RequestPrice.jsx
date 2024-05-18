@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import PricingCard from './PricingCard'
 import { FaShower, FaCar, FaRulerCombined, FaBed, FaShare, FaMapMarkerAlt, FaVideo, FaArrowRight, FaPrint ,FaInstagram, FaFacebook,  FaTwitter  } from 'react-icons/fa';
-import SymbolShelf from '../../../../Components/snipped/SymbolShelf';
+import SymbolShelf from 'snippets/SymbolShelf';
 import { Link } from 'react-router-dom';
 function RequestPrice() {
     return (

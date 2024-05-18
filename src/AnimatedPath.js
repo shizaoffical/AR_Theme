@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Layout from "./Authentication/Layout";
+import Layout from "@authentication/Layout";
 import { AnimatePresence } from 'framer-motion';
-import NotFound from './Pages/NotFound';
-import Home from './Pages/home/Home';
+import NotFound from '@pages/NotFound';
+import Home from '@pages/home/Home';
 
 function AnimatedPath() { 
     return (

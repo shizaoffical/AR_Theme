@@ -1,10 +1,10 @@
 import React from 'react'
-import CommuntiesCard from '../../../../Components/snipped/CommuntiesCard'
-import Image1 from "../../../../Assests/Images/Screenshot_1.png"
-import Image2 from "../../../../Assests/Images/Screenshot_2.png"
-import Image3 from "../../../../Assests/Images/Screenshot_3.png"
+import CommuntiesCard from 'snippets/CommuntiesCard'
+import Image1 from "@assests/images/Screenshot_1.png"
+import Image2 from "@assests/images/Screenshot_2.png"
+import Image3 from "@assests/images/Screenshot_3.png"
 import {  Row, Col } from 'react-bootstrap';
-import SectionHeading from '../../../../Components/snipped/SectionHeading'
+import SectionHeading from 'snippets/SectionHeading'
 function Communties() {
   return (
     <div className="communties">

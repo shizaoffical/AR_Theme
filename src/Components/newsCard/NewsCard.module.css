@@ -1,0 +1,36 @@
+/* NewsCard.module.css */
+
+.news-card {
+    border: 1px solid var(--section-title);
+    margin-bottom: 1rem;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+
+.news-card-inner {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.news-card-inner-h {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.news-card-inner-p {
+    font-size: 14px;
+    width: 90%;
+    color: var(--section-title);
+}
+
+.news-card-inner-a {
+    font-size: 14px;
+    color: var(--black-color);
+    text-transform: capitalize;
+}

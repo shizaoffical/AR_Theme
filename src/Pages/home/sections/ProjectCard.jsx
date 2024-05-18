@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
-import SectionHeading from '../../../../Components/snipped/SectionHeading';
-import MainButton from '../../../../Components/snipped/MainButton';
-import ProjectsCard from '../../../../Components/ProjectsCard';
+import SectionHeading from 'snippets/SectionHeading';
+import MainButton from 'snippets/MainButton';
+import ProjectsCard from '@components/ProjectsCard';
 function ProjectCard() {
     return (
         <div className='project-card'>

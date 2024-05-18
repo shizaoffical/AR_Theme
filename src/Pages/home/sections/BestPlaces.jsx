@@ -1,7 +1,7 @@
 import React from 'react'
-import CardTitle from '../../../Components/snipped/CardTitle'
-import CardHeading from '../../../Components/snipped/CardHeading'
-import MainButton from '../../../Components/snipped/MainButton'
+import CardTitle from 'snippets/CardTitle'
+import CardHeading from 'snippets/CardHeading'
+import MainButton from 'snippets/MainButton'
 
 function BestPlaces() {
     return (

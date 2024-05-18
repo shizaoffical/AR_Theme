@@ -1,0 +1,170 @@
+/* SocialLinks.module.css */
+.headerSocialLinks a {
+    font-size: 18px;
+    margin: 0 6px;
+    transition: 0.5s;
+    color: var(--white-color);
+}
+
+.headerSocialLinks a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 525px) {
+    .headerSocialLinks a {
+        font-size: 16px;
+        margin: 0 4px;
+    }
+}
+
+
+
+/* Section Heading */
+.sectionTitle {
+    color: var(--section-title);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 2rem;
+}
+
+
+
+
+/* Main button */
+.mainBtn {
+    border: 2px solid transparent;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 400px;
+    padding: 7px 17px;
+    margin-top: 5rem;
+    transition: 0.5s;
+}
+
+.mainBtn:hover {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--primary-color);
+}
+
+
+
+@media (max-width: 520px) {
+    .mainBtn {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .mainBtn {
+        margin-top: 2rem;
+        border: transparent;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+        font-size: 14px;
+        font-weight: 400px;
+        padding: 4px 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Symbol Shelf section */
+.symbolshelf {
+    display: flex;
+    gap: 11px;
+}
+
+.symbolshelf i,
+.symbolshelf p {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.symbolshelf i {
+    color: var(--primary-color);
+}
+
+.symbolshelf p {
+    color: var(--white-color);
+    transition: 0.5s;
+}
+
+.symbolshelf p:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 992px) {
+    .symbolshelf {
+        gap: 5px;
+    }
+
+    .symbolshelf i,
+    .symbolshelf p {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
+
+/* Card styles */
+.cardHeading {
+    text-transform: uppercase;
+}
+
+.cardTitle {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.coummunicateCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 2rem;
+}
+
+.coummunicateCard img {
+    width: 70%;
+    height: 120px;
+}
+
+@media (max-width: 550px) {
+    .coummunicateCard img {
+        width: 70%;
+        height: 70px;
+    }
+
+    .coummunicateCard {
+        gap: 1rem;
+    }
+}
+
+.coummunicateCardText {
+    color: var(--black-color);
+    text-transform: capitalize;
+}
+
+
+

@@ -277,12 +277,7 @@
     margin-top: 2rem;
 }
 
-.hot-listining-title {
-    color: var(--section-title);
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 2rem;
-}
+
 
 .hot-listining-row {
     padding-top: 3rem;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import SocialLinks from '../../../../Components/header/SocialLinks';
+import SocialLinks from 'snippets/SocialLinks';
 // import { Row, Col } from 'react-bootstrap';
 // import CardHeading from "../../../../Components/snipped/CardHeading"
 // import CardTitle from "../../../../Components/snipped/CardTitle"

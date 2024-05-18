@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 import { Container, Row, Col } from 'react-bootstrap';
 import HeroSection from './sections/heroSection/HeroSection';
 import HotListings from './sections/hotListining/HotListings';
-import RequestPrice from './sections/RequestForPrice/RequestPrice';
-import FeaturedListiningsSection from './sections/FeaturedListining/FeaturedListiningsSection';
-import ProjectCard from './sections/Projects/ProjectCard';
+import RequestPrice from './sections/requestForPrice/RequestPrice';
+import FeaturedListiningsSection from './sections/featuredListining/FeaturedListiningsSection';
+import ProjectCard from './sections/ProjectCard';
 import BestPlaces from './sections/BestPlaces';
-import SymbolShelf from '../../Components/snipped/SymbolShelf';
+import SymbolShelf from 'snippets/SymbolShelf';
 import { FaArrowRight } from 'react-icons/fa';
-import SectionHeading from '../../Components/snipped/SectionHeading';
-import Communties from './sections/Communties/Communties';
+import SectionHeading from 'snippets/SectionHeading';
+import Communties from './sections/Communties';
 import ImageSection from './sections/ImageSection';
-import LatestNews from './sections/latestSection/LatestNews';
+import LatestNews from './sections/LatestNews';
 
 function Home() {
     return (
