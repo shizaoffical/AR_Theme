@@ -1,8 +1,8 @@
 import React from 'react'
 import FeaturedListiningsSingleSlider from './FeaturedListiningsSingleSlider';
 import { Col, Row } from 'react-bootstrap';
-import SectionHeading from 'snippets/SectionHeading';
-import MainButton from 'snippets/MainButton';
+import SectionHeading from '@snippets/SectionHeading';
+import MainButton from '@snippets/MainButton';
 function FeaturedListiningsSection() {
     return (
         <div className='featured-listining'> 

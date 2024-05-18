@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import MainButton from 'snippets/MainButton';
+import MainButton from '@snippets/MainButton';
 function HeroSlider({ carouselData }) {
     const [index, setIndex] = useState(0);
 

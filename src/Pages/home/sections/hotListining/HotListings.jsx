@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import HotListingSlider from './HotListiningSlider'
-import SectionHeading from 'snippets/SectionHeading';
+import SectionHeading from '@snippets/SectionHeading';
 function HotListings() {
   return (
     <div>

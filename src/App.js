@@ -1,7 +1,7 @@
 
 import { BrowserRouter } from 'react-router-dom';
 import '@app/App.css';
-import "pages/home/Home.css"
+import "@pages/home/Home.css"
 import "@components/Components.css"
 // import "./Pages/home/sections/FeaturedListining/Slides.css"
 

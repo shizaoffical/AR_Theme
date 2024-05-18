@@ -1,5 +1,5 @@
 import React from 'react'
-import NewsCard from 'components/newsCard/NewsCard'
+import NewsCard from '@components/newsCard/NewsCard'
 import { Row, Col } from 'react-bootstrap'
 function LatestNews() {
   return (
