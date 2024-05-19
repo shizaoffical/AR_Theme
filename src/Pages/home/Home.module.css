@@ -1,0 +1,133 @@
+
+
+/* BestPlaces.module.css */
+
+.bestPlace {
+    position: relative;
+    padding: 2rem 0 !important;
+    margin: 2rem 0;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--white-color);
+    align-items: flex-start;
+    background: linear-gradient(to right, #F29F05 60%, transparent 100%),
+        url("https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-02.jpg");
+    background-size: cover;
+    background-position: center right;
+    z-index: 1;
+}
+
+.bestPlace::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 75%;
+    width: 58%;
+    height: 100%;
+    background: url("https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-02.jpg") no-repeat center center;
+    background-size: cover;
+    transform: translateX(-50%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+
+.bestPlaceInner {
+    text-align: left;
+}
+
+.bestPlacesHeading {
+    font-size: 2.5rem;
+    width: 30%;
+    color: var(--white-color);
+}
+
+.bestPlaceInner p {
+    font-size: 14px;
+    color: var(--white-color);
+    width: 30%;
+}
+
+.bestPlacesBtn {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    margin-top: 1rem !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .bestPlacesHeading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .bestPlacesHeading {
+        width: 43%;
+    }
+    .bestPlaceInner p {
+        width: 43%;
+    }
+}
+
+@media (max-width: 767px) {
+    .bestPlacesHeading {
+        font-size: 1.3rem;
+        width: 40%;
+    }
+    .bestPlaceInner p {
+        font-size: 12px;
+        width: 40%;
+    }
+}
+
+@media (max-width: 550px) {
+    .bestPlacesHeading {
+        font-size: 1.5rem;
+        width: 58%;
+    }
+    .bestPlaceInner p {
+        width: 58%;
+    }
+    .bestPlacesBtn {
+        font-size: 12px;
+    }
+    .bestPlace {
+        height: 18rem;
+    }
+    .bestPlace::before {
+        width: 30%;
+    }
+}
+
+@media (max-width: 360px) {
+    .bestPlacesHeading {
+        font-size: 1rem;
+    }
+    .bestPlaceInner p {
+        font-size: 11px;
+    }
+    .bestPlacesBtn {
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+
+
+
+.imageSection {
+    margin: 3rem 0;
+}
+
+.imageSectionHeading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}

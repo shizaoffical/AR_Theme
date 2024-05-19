@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
+import styles from './RequestPrice.module.css';
 
 function PricingCard(props) {
-  return (
-
-       <div className="card">
-        <div className="icon">{props.icon}</div>
-        <h3 className="card-heading">{props.heading}</h3>
-        <p className="card-text">{props.text}</p>
-    </div>
-  )
+    return (
+        <div className={styles.card}> 
+            <div className={styles.icon}>{props.icon}</div> 
+            <h3 className={styles.cardHeading}>{props.heading}</h3> 
+            <p className={styles.cardText}>{props.text}</p> 
+        </div>
+    );
 }
 
-export default PricingCard
+export default PricingCard;

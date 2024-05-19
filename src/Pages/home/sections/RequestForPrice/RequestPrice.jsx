@@ -1,16 +1,17 @@
-import React from 'react'
-import { Row, Col, Container } from 'react-bootstrap'
-import PricingCard from './PricingCard'
-import { FaShower, FaCar, FaRulerCombined, FaBed, FaShare, FaMapMarkerAlt, FaVideo, FaArrowRight, FaPrint ,FaInstagram, FaFacebook,  FaTwitter  } from 'react-icons/fa';
+import React from 'react';
+import { Row, Col, Container } from 'react-bootstrap';
+import PricingCard from './PricingCard';
+import { FaShower, FaCar, FaRulerCombined, FaBed, FaShare, FaMapMarkerAlt, FaVideo, FaArrowRight, FaPrint, FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 import SymbolShelf from '@snippets/SymbolShelf';
 import { Link } from 'react-router-dom';
+import styles from './RequestPrice.module.css';
+
 function RequestPrice() {
     return (
-        <div className='request-price'>
+        <div className={styles.requestPrice}>
             <Container>
-                <h1 className='request-price-tittle'>Request For Price</h1>
-                <Row className='request-price-row-1'>
-
+                <h1 className={styles.requestPriceTitle}>Request For Price</h1>
+                <Row className={styles.requestPriceRow1}>
                     <Col lg={3} sm={6} xs={12}>
                         <PricingCard icon={<FaBed />} text="bedrooms" heading="21" />
                     </Col>
@@ -24,25 +25,24 @@ function RequestPrice() {
                         <PricingCard icon={<FaRulerCombined />} text="square feet" heading="4564" />
                     </Col>
                 </Row>
-                <Row className='request-price-row-2'>
-                    <Col lg={8} sm={12} className='request-price-row-2-col-1'>
+                <Row className={styles.requestPriceRow2}>
+                    <Col lg={8} sm={12} className={styles.requestPriceRow2Col1}>
                         <SymbolShelf icon={<FaMapMarkerAlt />} text="location" />
                         <SymbolShelf icon={<FaVideo />} text="video" />
                         <SymbolShelf icon={<FaArrowRight />} text="brochure" />
                         <SymbolShelf icon={<FaArrowRight />} text="payment plan" />
                         <SymbolShelf icon={<FaPrint />} text="print" />
                     </Col>
-                    <Col lg={4} sm={12} className='request-price-row-2-col-2'>
+                    <Col lg={4} sm={12} className={styles.requestPriceRow2Col2}>
                         <SymbolShelf icon={<FaShare />} text="share" />
                         <Link to="" target="_blank"><FaFacebook /></Link>
-                        <Link to="" target="_blank">  <FaInstagram /></Link>
-                        <Link to="" target="_blank"> <FaTwitter /></Link>
-
+                        <Link to="" target="_blank"> <FaInstagram /></Link>
+                        <Link to="" target="_blank"><FaTwitter /></Link>
                     </Col>
                 </Row>
             </Container>
         </div>
-    )
+    );
 }
 
-export default RequestPrice
+export default RequestPrice;

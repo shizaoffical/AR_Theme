@@ -1,0 +1,101 @@
+/* FLSection.module.css */
+.featuredListining{
+  margin: 3rem 0 2rem;
+
+}
+.featuredListiningContainer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 2rem 0 1rem;
+  }
+  
+  .featuredListiningSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+  }
+  
+  .featuredListiningSlide.active {
+    opacity: 1;
+  }
+  
+  .featuresListiningSocialLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .featuredButtonContainer {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+  }
+  
+.slideButton {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.sale,
+.rent {
+  color: var(--white-color);
+  bottom: 10px;
+}
+
+.sale {
+  background-color: var(--primary-color);
+}
+
+.rent {
+  background-color: var(--dark-bg-color);
+}
+  
+  .featuredListiningPrice {
+    position: absolute;
+    bottom: 10px !important;
+    left: 10px !important;
+    font-size: 2rem;
+    color: var(--white-color);
+  }
+  
+  .featuredPrevious,
+  .featuredNext {
+    position: absolute;
+    bottom: 10px;
+    border: 2px solid transparent;
+    padding: 3px 7px;
+    font-weight: bold;
+    color: var(--black-color);
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .featuredPrevious:hover,
+  .featuredNext:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+  }
+  
+  .featuredPrevious {
+    right: 50px;
+  }
+  
+  .featuredNext {
+    right: 10px;
+  }
+  

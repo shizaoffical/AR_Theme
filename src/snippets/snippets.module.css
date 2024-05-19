@@ -135,36 +135,6 @@
     letter-spacing: 1px;
 }
 
-.coummunicateCard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    padding: 10px 0;
-    gap: 2rem;
-}
-
-.coummunicateCard img {
-    width: 70%;
-    height: 120px;
-}
-
-@media (max-width: 550px) {
-    .coummunicateCard img {
-        width: 70%;
-        height: 70px;
-    }
-
-    .coummunicateCard {
-        gap: 1rem;
-    }
-}
-
-.coummunicateCardText {
-    color: var(--black-color);
-    text-transform: capitalize;
-}
 
 
 

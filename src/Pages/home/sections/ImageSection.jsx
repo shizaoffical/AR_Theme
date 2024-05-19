@@ -1,4 +1,6 @@
-import React from 'react'
+// ImageSection.jsx
+import React from 'react';
+import styles from '../Home.module.css';
 
 function ImageSection() {
     const backgroundImageStyle = {
@@ -12,15 +14,14 @@ function ImageSection() {
         height: '80vh',
         width: '90%'
     };
+
     return (
-        <center className='image-section'>
+        <center className={styles.imageSection}>
             <div className='' style={backgroundImageStyle}>
-                <h3 className='image-section-heading'>Advertisemtn your property here</h3>
+                <h3 className={styles.imageSectionHeading}>Advertisement your property here</h3>
             </div>
         </center>
-
-
-    )
+    );
 }
 
-export default ImageSection
+export default ImageSection;

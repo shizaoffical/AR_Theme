@@ -1,0 +1,49 @@
+/* AboutInHome.module.css */
+
+.aboutInHome {
+    margin: 2rem 0;
+}
+
+.aboutInHomeR1C2 {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.aboutInHomeIText p,
+.aboutInHomeIText i {
+    color: var(--black-color) !important;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.aboutInHomeIText i {
+    color: var(--white-color) !important;
+    background-color: var(--primary-color) !important;
+    padding: 0px 3px;
+    border-radius: 50%;
+}
+
+.aboutInHomeR2 {
+    padding: 1rem 0;
+}
+
+.aboutInHomeR2C2P {
+    color: var(--section-title);
+}
+
+@media (max-width: 992px) {
+    .aboutInHomeR1C2 {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .aboutInHomeR1C2 {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+}

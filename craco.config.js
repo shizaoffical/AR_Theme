@@ -9,6 +9,9 @@ module.exports = {
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@assests': path.resolve(__dirname, 'src/assests'),
       '@snippets': path.resolve(__dirname, 'src/snippets'),
+      '@communities': path.resolve(__dirname, 'src/components/communities'),
+      '@newsCard': path.resolve(__dirname, 'src/components/newsCard'),
+      '@aboutInHome': path.resolve(__dirname, 'src/components/aboutInHome'),
     },
   },
 }

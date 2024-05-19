@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './snippets.module.css';
+import styles from './Communities.module.css';
 
 const CommunitiesCard = (props) => {
     return (

@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import SocialLinks from '@snippets/SocialLinks';
-// import { Row, Col } from 'react-bootstrap';
-// import CardHeading from "../../../../Components/snipped/CardHeading"
-// import CardTitle from "../../../../Components/snipped/CardTitle"
+import styles from './FLSection.module.css';
+
 const FeaturedListiningsSingleSlider = () => {
   const [slides] = useState([
     { id: 1, imageUrl: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg' },
@@ -24,68 +23,34 @@ const FeaturedListiningsSingleSlider = () => {
   };
 
   return (
-    <div className="featured-listining-container">
+    <div className={styles.featuredListiningContainer}>
 
       {slides.map((slide, index) => (
-        <div >
+        <div key={slide.id}>
 
           <div
-           
-            className={`featured-listining-slide ${index === currentSlideIndex ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${slide.imageUrl})` }}
-          >
-            <div className='features-listining-social-links'>
+            className={`${styles.featuredListiningSlide} ${index === currentSlideIndex ? styles.active : ''}`}
+            style={{ backgroundImage: `url(${slide.imageUrl})` }}>
+            <div className={styles.featuresListiningSocialLinks}>
               <SocialLinks facebook twitter instagram />
             </div>
-            <div className="featured-button-container">
-              <button className="slide-button sale">For Sale</button>
+            <div className={styles.featuredButtonContainer}>
+            <button className={`${styles.slideButton} ${styles.sale}`}>For Sale</button>
+                        {/* <button className={`${styles.slideButton} ${styles.rent}`}>For Rent</button> */}
               {/* <button className="slide-button rate">For rate</button> */}
 
             </div>
-            <p className="featured-listining-price">Rs.<br /> <strong>25,550,000</strong></p>
+            <p className={styles.featuredListiningPrice}>Rs.<br /> <strong>25,550,000</strong></p>
 
           </div>
-          {/* <div className='featured-listining-inner'>
-            <Row >
-              <CardTitle title="ExPlore Now" />
-              <CardHeading heading="property title" />
-            </Row>
-            <Row className='featured-listining-inner-b'>
-              <Col lg={3}>
-                <p>Bed</p>
-                <dt>3</dt>
-              </Col>
-              <Col lg={3}>
-                <p>Bed</p>
-                <dt>3</dt>
-              </Col>
-              <Col lg={3}>
-                <p>Bed</p>
-                <dt>3</dt>
-              </Col>
-              <Col lg={3}>
-                <p>Bed</p>
-                <dt>3</dt>
-              </Col>
-            </Row>
-            <Row className='featured-listining-inner-c'>
-              <Col lg={4}>
-              </Col>
-              <Col lg={4}>
-              </Col>
-              <Col lg={4}>
-              </Col>
-            </Row>
-          </div> */}
+        
         </div>
       ))}
-      <div className='featured-btn'>
-        <button className="featured-previous" onClick={prevSlide}>  <FaArrowLeft /></button>
-        <button className="featured-next" onClick={nextSlide}>  <FaArrowRight /></button>
+      <div className={styles.featuredBtn}>
+        <button className={styles.featuredPrevious} onClick={prevSlide}>  <FaArrowLeft /></button>
+        <button className={styles.featuredNext} onClick={nextSlide}>  <FaArrowRight /></button>
       </div>
       {/*    Deail of slider */}
-
-
     </div>
   );
 };

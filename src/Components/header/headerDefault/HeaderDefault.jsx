@@ -38,16 +38,16 @@ const HeaderDefault = () => {
                     <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}>
                         <ul className="navbar-nav ms-auto">
                             <li className={`nav-item ${styles.navItem}`}>
-                                <Link className={`nav-link ${styles.navLink}`} to="#">Home</Link>
+                                <Link className={`nav-link ${styles.navLink}`} to="/">Home</Link>
                             </li>
                             <li className={`nav-item ${styles.navItem}`}>
-                                <Link className={`nav-link ${styles.navLink}`} to="#">About</Link>
+                                <Link className={`nav-link ${styles.navLink}`} to="/about-us">About</Link>
                             </li>
                             <li className={`nav-item ${styles.navItem}`}>
-                                <Link className={`nav-link ${styles.navLink}`} to="#">Project</Link>
+                                <Link className={`nav-link ${styles.navLink}`} to="/project">Project</Link>
                             </li>
                             <li className={`nav-item ${styles.navItem}`}>
-                                <Link className={`nav-link ${styles.navLink}`} to="#">Listing</Link>
+                                <Link className={`nav-link ${styles.navLink}`} to="/listings">Listing</Link>
                             </li>
                             <li className={`nav-item dropdown ${styles.navItem}`}>
                                 <Link className={`nav-link dropdown-toggle ${styles.navLink}`} to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,10 +59,10 @@ const HeaderDefault = () => {
                                 </ul>
                             </li>
                             <li className={`nav-item ${styles.navItem}`}>
-                                <Link className={`nav-link ${styles.navLink}`} to="#">Blog</Link>
+                                <Link className={`nav-link ${styles.navLink}`} to="/blog">Blog</Link>
                             </li>
                             <li className={`nav-item ${styles.navItem}`}>
-                                <Link className={`nav-link ${styles.navLink}`} to="#">Contact Us</Link>
+                                <Link className={`nav-link ${styles.navLink}`} to="/contact-Us">Contact Us</Link>
                             </li>
                         </ul>
                     </div>

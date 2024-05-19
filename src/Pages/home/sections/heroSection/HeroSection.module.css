@@ -1,0 +1,151 @@
+/* HeroSlider.module.css */
+
+.heroSection {
+    height: 100vh;
+
+}
+
+.heroSlider {
+    position: relative;
+}
+
+.heroSliderBgImage {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carouselCaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    left: 0;
+    bottom: 0;
+    padding: 0 5rem;
+    width: 52%;
+
+}
+
+.heroSliderHeading {
+    font-size: 3rem;
+    color: var(--white-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.heroSliderText {
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.heroSliderButton {
+    border: 2px solid transparent;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 400px;
+    padding: 7px 17px;
+    margin-top: 5rem;
+    transition: 0.5s;
+}
+
+.heroSliderButton:hover {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--primary-color);
+}
+
+.heroSliderArrow {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.heroSliderIcon {
+    border: 0.5px solid var(--white-color);
+    padding: 7px 12px;
+    margin-left: 4px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.heroSliderIcon:hover,
+.heroSliderIcon:active {
+    border: 0.5px solid var(--primary-color);
+    background-color: var(--primary-color);
+} 
+
+
+
+
+@media (max-width: 992px) {
+    .heroSection,
+    .heroSliderBgImage {
+        height: 80vh;
+    }
+
+    .carouselCaption {
+        width: 100%;
+    }
+}
+
+@media (max-width: 670px) {
+    .heroSliderArrow,
+    .carouselCaption {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .heroSliderArrow,
+    .carouselCaption {
+        padding: 0 0.5rem;
+    }
+
+    .heroSliderButton {
+        margin-top: 2.5rem;
+    }
+
+    .heroSection,
+    .heroSliderBgImage {
+        height: 60vh;
+    }
+    .heroSliderHeading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .heroSliderButton {
+        margin-top: 2rem;
+        border: transparent;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+        font-size: 14px;
+        font-weight: 400px;
+        padding: 4px 8px;
+    }
+    .heroSliderHeading {
+        font-size: 1.6rem;
+    }
+
+
+
+    .heroSliderText {
+        text-transform: capitalize;
+        font-size: 0.8rem;
+    }
+
+    .heroSection,
+    .heroSliderBgImage {
+        height: 50vh;
+    }
+}
