@@ -27,7 +27,7 @@ function Home() {
             </Container>
             <BestPlaces />
             <Container>
-            <AboutInHome/>
+            <AboutInHome heading="About"/>
                 <Communities/>
                 <ImageSection />
               <LatestNews/>

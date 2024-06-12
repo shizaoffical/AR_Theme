@@ -1,0 +1,115 @@
+.contactForm{
+    background-color: #EBEBEB;
+    padding: 1rem ;
+}
+.contactLeft{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right:  1.6rem ;
+    margin-top: 1.5rem;
+
+}
+.contactLeft > p{
+ font-size: 20px;
+ color: #C5C5C5;
+ font-weight: bold;
+}
+.contactLeft > h1{
+ font-size: 3.5rem;
+ font-weight: 700;
+ color: black;
+ margin-bottom: 10px;
+}
+.contactLeft > div  {
+ margin: 1rem 0;
+}
+.contactLeft > div  > label{
+    font-size: 13px;
+    color: #C5C5C5;
+   }
+.sendMessage{
+    width: 100%;
+    padding: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--section-title);
+    background-color: #C5C5C5;
+    border: transparent;
+}
+
+
+.formInput{
+    padding: 0;
+}
+
+.formInput > input ,
+.formInput > textarea{
+    width: 100%;
+    padding: 0;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: var(--text-color);
+    border: 1.5px solid var(--text-color);
+}
+.formInput > input::placeholder ,
+.formInput > textarea::placeholder{
+    color: #C5C5C5;
+}
+.formRow{
+    margin: 1rem 0;
+}
+
+@media (max-width: 1200px) {
+    .contactLeft > h1{
+     font-size: 2.8rem;
+    }  
+}
+
+@media (max-width: 992px) {
+    .contactLeft{
+        margin-right:  0rem ;
+    
+    }
+}
+
+
+.addresstop{
+    display: flex !important;
+    border: 2px solid red;
+}
+
+.addresstitle{
+    margin: 0 !important;
+    border: 2px solid blue;
+}
+.addressSnip {
+    color: black !important;
+    border: 2px solid black;
+    text-align: right;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  
+
+}
+
+.addressSnip > a
+p , i{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+
+text-transform: capitalize;    color: black !important;
+    border: 2px solid red;
+}
+
+.addressSnip > a
+ i{
+    background-color: var(--primary-color) !important;
+    padding: 4px !important;
+    border-radius: 50% !important;
+}

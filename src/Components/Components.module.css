@@ -1,0 +1,90 @@
+/* ProjectsCard.module.css */
+
+.projectsCard {
+    position: relative;
+    height: 380px;
+    margin: 1rem 0;
+}
+
+.pcTopLeft {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.pcPrice {
+    margin-bottom: 0.6rem !important;
+    line-height: 28px;
+}
+.pcPrice p {
+    color: var(--white-color) !important;
+    font-size: 1.2rem !important;
+    text-transform: uppercase;
+
+}
+.pcPrice strong {
+    color: var(--white-color) !important;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+}
+.pcBottomLeft {
+    position: absolute;
+    bottom: 20px;
+    width:65%;
+    left: 5px;
+}
+
+.pcBottomLeft p {
+    font-size: 12px;
+    color: var(--white-color);
+    line-height: 1.3em ;
+}
+
+.pcBottomRight {
+    position: absolute;
+    bottom: 20px;
+    right: -12px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pcBottomRight p {
+    font-size: 10px;
+    color: var(--white-color);
+    line-height: 1.2 !important;
+}
+
+@media (max-width: 992px) {
+    .pcBottomLeft {
+        position: absolute;
+        bottom: 80px;
+        left: 10px;
+    }
+}
+
+.pcInvestButton {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: var(--white-color);
+    padding: 2px 28px 2px 8px;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.pcInvestButton span {
+    background-color: var(--white-color);
+    border-radius: 50%;
+    color: var(--dark-bg-color);
+    padding: 1px 5px;
+    position: absolute;
+    right: -12px !important;
+    border: 2px solid transparent;
+    bottom: 0;
+}
+@media (max-width: 550px) {
+    .pcBottomLeft {
+        width:95%;
+    }
+}

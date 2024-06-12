@@ -10,7 +10,7 @@
 
 
 .latestNewsTitle {
-    margin: 1rem 0 !important;
+    margin: 1rem 0 2.5rem !important;
     font-weight: 700;
 }
 
@@ -23,7 +23,7 @@
 /* NewsCard.module.css */
 
 .newsCard {
-    border: 1px solid var(--section-title);
+    border: 2px solid var(--text-color);
     margin-bottom: 1rem;
 }
 

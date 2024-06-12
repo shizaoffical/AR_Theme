@@ -15,7 +15,8 @@ function HotListings() {
                             <p>Listed Date : 05 / May /2023</p>
                             <h1>Welcome to our listining</h1>
                             <dt>Lorem ipsum dolor sit amet consectetur adipisicing</dt>
-                            <p>elit. Porro eos vero excepturi quae nostrum culpa? Iste quod, sit dolorem unde tempore rerum id. Rerum id cumque expedita. Culpa, perspiciatis amet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus dolore dolores sunt iste voluptas eaque, voluptatibus aspernatur quo praesentium ducimus id ratione modi.</p>
+                            <p> elit. Asperiores ratione vitae quasi molestias corporis aspernatur quaerat modi totam alias ipsam, nulla corrupti soluta impedit non delectus, perferendis eveniet nihil officiis.
+                            Dolorum vitae incidunt modi aperiam voluptas veniam, molestiae, mollitia laudantium ipsa ut, consequuntur aut. Tempore incidunt autem dicta.</p>
                         </div>
                     </Col>
                     <Col lg={7} sm={12}>

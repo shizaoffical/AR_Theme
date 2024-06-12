@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './snippets.module.css';
 
-const CardTitle = (props) => {
+const CardValue = (props) => {
     return (
         <div>
             <p className={`${styles.cardTitle} ${props.anotherclass}`}>{props.title}</p>
@@ -9,4 +9,4 @@ const CardTitle = (props) => {
     );
 };
 
-export default CardTitle;
+export default CardValue;

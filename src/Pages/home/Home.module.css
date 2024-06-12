@@ -1,7 +1,5 @@
 
 
-/* BestPlaces.module.css */
-
 .bestPlace {
     position: relative;
     padding: 2rem 0 !important;
@@ -12,25 +10,40 @@
     justify-content: flex-start;
     color: var(--white-color);
     align-items: flex-start;
-    background: linear-gradient(to right, #F29F05 60%, transparent 100%),
-        url("https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-02.jpg");
+    background: linear-gradient(to right, #F29F05 65%, transparent 0%);
     background-size: cover;
     background-position: center right;
     z-index: 1;
+    margin-bottom: 7rem;
 }
 
 .bestPlace::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 3rem;
     left: 75%;
     width: 58%;
     height: 100%;
     background: url("https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-02.jpg") no-repeat center center;
     background-size: cover;
-    transform: translateX(-50%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    z-index: 1;
+    transform: translateX(-55%);
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+.bestPlace::after {
+    content: '';
+    position: absolute;
+    top: 3.1rem; 
+    left: calc(65% - 40px); 
+    width: 50px; 
+    height: 79%; 
+    background: var(--black-color);
+    transform-origin: top right; 
+    transform: rotate(80deg);
+    z-index: 1; 
+    overflow: hidden;
 }
 
 .bestPlaceInner {
@@ -50,12 +63,54 @@
 }
 
 .bestPlacesBtn {
-    background-color: var(--white-color);
+    background-color: var(--white-color) !important;
     color: var(--black-color);
     margin-top: 1rem !important;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 14px;
+}
+
+@media (max-width: 1245px) {
+    .bestPlace::after {
+        height: 75%; 
+    }
+}
+
+@media (max-width: 1190px) {
+    .bestPlace::after {
+        height: 72%; 
+        transform: rotate(79deg);
+    }
+}
+
+
+@media (max-width: 1128px) {
+    .bestPlace::after {
+        height: 69%; 
+    }
+}
+
+@media (max-width: 1100px) {
+    .bestPlace::after {
+        height: 66%;
+        transform: rotate(78deg);
+    }
+}
+
+@media (max-width: 1040px) {
+    .bestPlace::after {
+        height: 62%; 
+    }
+    .bestPlace::before ,
+    .bestPlace::after {
+        display: none !important;
+    
+    }
+    .bestPlace {
+        background: linear-gradient(to right, #F29F05 100%, transparent 0%);
+        
+    }
 }
 
 @media (max-width: 1200px) {
@@ -65,6 +120,7 @@
 }
 
 @media (max-width: 992px) {
+   
     .bestPlacesHeading {
         width: 43%;
     }
@@ -74,6 +130,7 @@
 }
 
 @media (max-width: 767px) {
+   
     .bestPlacesHeading {
         font-size: 1.3rem;
         width: 40%;

@@ -5,12 +5,12 @@ import SymbolShelf from '@snippets/SymbolShelf';
 import { FaArrowRight } from 'react-icons/fa';
 import styles from './AboutInHome.module.css';
 
-function AboutInHome() {
+function AboutInHome(props) {
   return (
     <div className={styles.aboutInHome}>
       <Row>
         <Col lg={6} sm={12}>
-          <SectionHeading heading="About" />
+          <SectionHeading heading1={props.heading} />
         </Col>
         <Col className={styles.aboutInHomeR1C2} lg={6} sm={12}>
           <SymbolShelf anotherclass={styles.aboutInHomeIText} icon={<FaArrowRight />} text="Contact Me" />

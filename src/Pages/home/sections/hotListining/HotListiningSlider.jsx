@@ -1,21 +1,13 @@
-
-
-// export default HotListingSlider;
-
-
-
-
-
-
 import React, { useState } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import styles from './HotListings.module.css';
+import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 
 const HotListingSlider = () => {
     const [slides] = useState([
-        { id: 1, imageUrl: 'https://t3.ftcdn.net/jpg/07/24/43/76/240_F_724437676_6aTqgYhJDWKZBgC798sfb7lpfz8FCdNq.jpg', text: 'DESIGNED FOR REAL ESTATE AGENTS.' },
-        { id: 2, imageUrl: 'https://t3.ftcdn.net/jpg/07/24/43/76/240_F_724437676_6aTqgYhJDWKZBgC798sfb7lpfz8FCdNq.jpg', text: 'DESIGNED FOR REAL ESTATE AGENTS.' },
-        { id: 3, imageUrl: 'https://t3.ftcdn.net/jpg/07/24/43/76/240_F_724437676_6aTqgYhJDWKZBgC798sfb7lpfz8FCdNq.jpg', text: 'DESIGNED FOR REAL ESTATE AGENTS.' },
+        { id: 1, imageUrl: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg', text: 'DESIGNED FOR REAL ESTATE AGENTS.' },
+        { id: 2, imageUrl: 'https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-02.jpg', text: 'DESIGNED FOR REAL ESTATE AGENTS.' },
+
+        { id: 3, imageUrl: 'https://t4.ftcdn.net/jpg/06/81/36/09/240_F_681360903_Glij2V8mY3wY7L3PJZ3eUtFIRM3xVGLf.jpg', text: 'DESIGNED FOR REAL ESTATE AGENTS.' },
         // Add more slides as needed
     ]);
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -45,8 +37,8 @@ const HotListingSlider = () => {
                     <button className={styles.slideButton + ' ' + styles.details}>More Details</button>
                 </div>
             ))}
-            <button className={styles.previous} onClick={prevSlide}> <span> <FaArrowLeft className={styles.me1} /></span>Previous</button>
-            <button className={styles.next} onClick={nextSlide}>Next Listing <span><FaArrowRight className={styles.ms1} /></span></button>
+            <button className={styles.previous} onClick={prevSlide}> <span> <FaArrowLeftLong   className="me-2" /></span>Previous</button>
+            <button className={styles.next} onClick={nextSlide}>Next Listing <span><FaArrowRightLong className="ms-2" /></span></button>
         </div>
     );
 };

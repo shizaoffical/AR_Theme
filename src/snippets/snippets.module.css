@@ -1,6 +1,6 @@
 /* SocialLinks.module.css */
 .headerSocialLinks a {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 6px;
     transition: 0.5s;
     color: var(--white-color);
@@ -24,28 +24,33 @@
     color: var(--section-title);
     text-transform: uppercase;
     font-weight: 700;
-    margin: 2rem;
+    margin: 3rem 0 2rem 0rem ;
 }
-
+.sectionTitle1 {
+    color: var(--section-title);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 3rem 0 2rem 2rem !important;
+}
 
 
 
 /* Main button */
 .mainBtn {
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     color: var(--white-color);
-    background-color: var(--primary-color);
     font-size: 20px;
     font-weight: 400px;
+    background-color: var(--primary-color) !important;
     padding: 7px 17px;
     margin-top: 5rem;
     transition: 0.5s;
 }
 
 .mainBtn:hover {
-    color: var(--primary-color);
-    background-color: var(--white-color);
-    border: 2px solid var(--primary-color);
+    color: var(--primary-color) !important;
+    background-color: var(--white-color) !important;
+    border:1px solid var(--primary-color);
 }
 
 
@@ -83,15 +88,19 @@
 /* Symbol Shelf section */
 .symbolshelf {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 11px;
 }
 
 .symbolshelf i,
 .symbolshelf p {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
 }
+
+
 
 .symbolshelf i {
     color: var(--primary-color);
@@ -138,3 +147,8 @@
 
 
 
+/* PageDefender */
+.PageDefender{
+    font-size: 14px;
+    margin: 2rem 0 !important;
+}

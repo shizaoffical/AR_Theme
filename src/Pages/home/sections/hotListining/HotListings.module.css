@@ -11,12 +11,12 @@
 .hotListiningCol1 > p:nth-child(1) {
     color: var(--primary-color) !important;
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .hotListiningCol1 > h1 {
     color: var(--black-color);
-    font-size: 3rem;
+    font-size: 3rem; 
     font-weight: bolder;
     text-transform: capitalize;
 }
@@ -24,11 +24,14 @@
 .hotListiningCol1 > dt {
     color: var(--black-color);
     font-size: 1.2rem;
+    margin-top: 10px;
+
 }
 
 .hotListiningCol1 > p {
-    color: var(--section-title);
+    color: #9C9C9C;
     font-size: 16px;
+    line-height: 27px;
 }
 
 @media (max-width: 992px) {
@@ -106,8 +109,8 @@
 
 .buttonContainer {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
 }
 
 .slideButton {
@@ -135,27 +138,28 @@
     color: var(--black-color);
     background-color: var(--white-color);
     position: absolute;
-    bottom: 10px !important;
-    right: 10px !important;
+    bottom: 15px !important;
+    right: 15px !important;
 }
 
 .previous,
 .next {
     position: absolute;
     top: -2rem;
-    border: 2px solid transparent;
-    width: fit-content;
+    border: transparent;
     font-weight: bold;
-    color: var(--section-title);
+    color: #D9D9D9;
     cursor: pointer;
     font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.7);
-    transition: 0.5s;
+    background-color: transparent;
+    transition: 0.2s;
     text-transform: uppercase;
+  margin-top: -0.8rem;
 }
 
 .previous span,
 .next span {
+  font-weight: 700;
     color: var(--black-color);
 }
 
@@ -167,11 +171,11 @@
 }
 
 .previous {
-    left: 10px;
+    left: 0px;
 }
 
 .next {
-    right: 10px;
+    right: 0px;
 }
 
 @media (max-width: 400px) {

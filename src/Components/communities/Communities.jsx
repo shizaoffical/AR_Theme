@@ -10,7 +10,7 @@ import styles from './Communities.module.css';
 function Communties() {
   return (
     <div className={styles.communties}>
-      <SectionHeading heading="Communties" />
+      <SectionHeading heading1="Communties" />
       <Row className={styles.communtiesRow}>
         <Col md={4} sm={6} xs={12} className={styles.communtiesCol}>
           <CommunitiesCard image={Image1} text="More info" />
