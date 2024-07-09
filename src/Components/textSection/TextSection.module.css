@@ -1,0 +1,163 @@
+/* AboutInHome.module.css */
+
+.text-section {
+    margin: 3rem 0;
+}
+
+.text-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-section-header,
+.text-section-subtitle,
+.text-section-date,
+.text-section-caption {
+    color: #A0A0A0;
+}
+
+.text-section-title {
+    font-size: 4rem;
+
+    margin-left: 5rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text-section-title-1{
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text-section-subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.text-section-date {
+    font-size: 1rem;
+    letter-spacing: 1.3px;
+}
+
+.text-section-detail {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.text-section-icon {
+    gap: 0.6rem !important;
+}
+
+.text-section-icon p {
+    font-size: 14px;
+    text-transform: capitalize;
+
+    color: var(--black-color) !important;
+    font-weight: 500;
+}
+
+.text-section-icon i {
+    color: var(--primary-color) !important;
+    background-color: var(--white-color) !important;
+    font-size: 16px !important;
+}
+
+.text-section-highlight {
+    margin: 2rem 0 1rem;
+    font-size: 22px;
+}
+
+.text-section-caption {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+.text-section-button {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 !important;
+    float: right !important;
+}
+.text-section-amount{
+    margin-top: 1.5rem !important;
+    float: right ;
+    font-size: 2rem;
+    font-weight: 700;
+}
+@media (max-width: 1200px) {
+    
+.text-section-highlight {
+    margin: 2rem 0 1rem;
+    font-size: 20px;
+}
+
+.text-section-caption {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+}
+@media (max-width: 992px) {
+    
+    .text-section-highlight {
+        margin: 2rem 0 1rem;
+        font-size: 18px;
+    }
+    
+    .text-section-caption {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    }
+
+@media (max-width: 767px) {
+    .text-section-detail {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        float: inline-end;
+        gap: 0rem;
+    }
+    .text-section-button {
+        font-size: 1rem !important;
+        padding: 2px 6px !important;
+    }
+    .text-section-amount{
+        margin-top: 0.7rem !important;
+        font-size: 1rem;
+    }
+    .text-section-title {
+        margin-left: 3rem !important;
+    }
+    .text-section-highlight {
+        margin: 2rem 0 1rem;
+        font-size: 16px;
+    }
+    
+    .text-section-caption {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+@media (max-width: 500px) {
+
+    .text-section-title {
+        font-size: 2.3rem;
+        margin-left: 1rem  !important;
+    }
+    .text-section-title-1{
+        font-size: 2.3rem;
+    }
+    
+    .text-section-subtitle {
+        font-size: 1.4rem;
+    }
+    .text-section-date {
+        font-size: 0.8rem;
+        letter-spacing: 1.3px;
+    }
+}

@@ -1,0 +1,51 @@
+.thumbnail-carousel {
+  margin: 20px auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail-carousel {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s ease;
+
+}
+
+.thumbnail {
+  width: 200px !important;
+  height: 140px;
+  cursor: pointer;
+}
+
+.thumbnail-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+  transform: translateY(-50%);
+}
+
+.thumbnail-button > button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .thumbnail {
+    width: 50% !important;
+    height: 110px;
+  }
+ 
+}

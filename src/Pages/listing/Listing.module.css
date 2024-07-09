@@ -1,0 +1,142 @@
+.feature{
+    border-bottom: 1px dotted var(--section-title);
+    border-top: 1px dotted var(--section-title);
+   padding: 0 2rem 10px;
+}
+.near-by-places{
+    padding: 0 2rem 10px;
+    border-bottom: 1px dotted var(--section-title);
+}
+.check-list-title{
+    margin: 2rem 0 !important;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 600;
+    color: #A0A0A0;
+    text-transform: capitalize;
+}
+
+.floor-plans{
+    padding: 0 2rem ;
+}
+
+
+
+.floor-plan {
+    background-color: var(--text-color);
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.floor-plan:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.6rem 1rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    float: right !important;
+    font-size: 1rem;
+}
+
+.dropdown {
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+
+    color: var(--section-title);
+}
+
+
+.show {
+    padding: 2rem;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.floor-image {
+    width: 100% !important;
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+    .header {
+        font-size: 16px;
+    }
+
+    .floor-image {
+        margin-bottom: 1rem;
+    }
+
+  
+
+}
+
+
+@media (max-width: 767px) {
+
+    .floor-image {
+        height: 250px;
+    }
+    .floor-description{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        font-size: 14px;
+    }
+    .floor-plans{
+        padding: 0 0rem ;
+    }
+}
+
+@media (max-width: 450px) {
+    .floor-description,
+    .header {
+        font-size: 12px;
+    }
+    .floor-image {
+        height: 200px;
+    }
+    .show {
+        padding: 1rem;
+    }
+    
+}
+

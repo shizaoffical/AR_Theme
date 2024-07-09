@@ -1,0 +1,173 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel img {
+  height: 445px;
+  width: 100%;
+  display: block;
+}
+
+.carasoul-button {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+  transform: translateY(-50%);
+}
+
+
+
+
+.carasoul-button > button {
+  padding: 0 !important;
+  border: none;
+  color: white;
+  border: none;
+  margin: 0 1rem;
+  padding: 0 !important;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.carasoul-description {
+  position: absolute !important;
+  bottom: 20px !important;
+  left: 30px !important;
+  padding: 0 1rem !important;
+  background-color: var(--white-color);
+}
+
+
+/* Project Information Crasoul */
+.project-information {
+  height: 460px;
+}
+
+.project-information-heading {
+  padding: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.project-information-heading-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--text-color);
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.project-information-heading-2>div {
+  text-transform: uppercase;
+  padding: 0.8rem 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.project-information-heading-2>div:nth-child(1),
+.project-information-heading-2>div:nth-child(2),
+.project-information-heading-2>div:nth-child(3) {
+  border-bottom: 1px solid var(--section-title);
+}
+
+.project-information-heading-2>div>p {
+  color: var(--section-title);
+
+}
+
+
+/* Listing Crasoul */
+.more-detail {
+  padding: 1rem;
+  border: 0.5px solid var(--section-title);
+}
+
+.more-detail-title {
+  color: var(--section-title);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2rem !important;
+}
+
+.listing-input {
+  padding: 0;
+}
+
+.listing-input>input,
+.listing-input>textarea {
+  width: 100%;
+  padding: 0;
+  font-size: 18px;
+  padding: 7px 10px;
+  background-color: var(--text-color);
+  color: var(--section-title);
+  margin-bottom: 1rem;
+  border: 0.5px solid var(--section-title);
+}
+
+
+.listing-input>input::placeholder,
+.listing-input>textarea::placeholder {
+  color: var(--section-title);
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .project-information-heading-2 {
+    padding: 1.5rem;
+  }
+
+  .project-information-heading-2>div {
+    padding: 1rem 0;
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .project-information {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .carousel img {
+    height: 300px;
+    width: 100%;
+    display: block;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .carasoul-description {
+    left: 20px !important;
+    padding: 0 0.3rem !important;
+  }
+  
+  .carasoul-description p {
+    font-size: 12px !important;
+  }
+  
+  .carasoul-description h5 {
+    font-weight: 500;
+    font-size: 12px !important;
+    margin-top: 1px !important;
+  }
+  
+}

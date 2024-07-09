@@ -1,42 +1,37 @@
 /* SocialLinks.module.css */
-.headerSocialLinks a {
+.SocialLinks a {
     font-size: 20px;
     margin: 0 6px;
     transition: 0.5s;
     color: var(--white-color);
 }
 
-.headerSocialLinks a:hover {
+.SocialLinks a:hover {
     color: var(--primary-color);
 }
 
-@media (max-width: 525px) {
-    .headerSocialLinks a {
-        font-size: 16px;
-        margin: 0 4px;
-    }
-}
-
-
 
 /* Section Heading */
-.sectionTitle {
+.heading,
+.heading1 {
     color: var(--section-title);
     text-transform: uppercase;
     font-weight: 700;
-    margin: 3rem 0 2rem 0rem ;
+    font-size: 2.2rem;
 }
-.sectionTitle1 {
-    color: var(--section-title);
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 3rem 0 2rem 2rem !important;
+
+.heading {
+    margin: 1.5rem 0rem;
+}
+
+.heading1 {
+    margin: 1.5rem 0 1rem 2.5rem !important;
 }
 
 
 
 /* Main button */
-.mainBtn {
+.main-button {
     border: 1px solid transparent;
     color: var(--white-color);
     font-size: 20px;
@@ -47,108 +42,300 @@
     transition: 0.5s;
 }
 
-.mainBtn:hover {
+.main-button:hover {
     color: var(--primary-color) !important;
     background-color: var(--white-color) !important;
-    border:1px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
-
-
-
-@media (max-width: 520px) {
-    .mainBtn {
-        margin-top: 2.5rem;
-    }
-}
-
-@media (max-width: 400px) {
-
-    .mainBtn {
-        margin-top: 2rem;
-        border: transparent;
-        color: var(--white-color);
-        background-color: var(--primary-color);
-        font-size: 14px;
-        font-weight: 400px;
-        padding: 4px 8px;
-    }
-}
-
-
-
-
-
-
-
-
-
 
 
 
 /* Symbol Shelf section */
-.symbolshelf {
+.symbol-shelf {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 11px;
+    gap: 1rem;
 }
 
-.symbolshelf i,
-.symbolshelf p {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
+.symbol-shelf i {
+    font-size: 22px !important;
+    color: var(--primary-color) !important;
 }
 
-
-
-.symbolshelf i {
-    color: var(--primary-color);
-}
-
-.symbolshelf p {
+.symbol-shelf p {
+    font-size: 20px;
     color: var(--white-color);
     transition: 0.5s;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
-.symbolshelf p:hover {
+.symbol-shelf p:hover {
     color: var(--primary-color);
 }
 
+
+/* Card Heading */
+.card-heading {
+    text-transform: uppercase;
+}
+
+
+.section-title{
+    font-size: 4rem ;
+    font-weight: 700;
+}
+
+/* pade-defender */
+.pade-defender {
+    font-size: 16px;
+    margin: 3rem 0 1rem !important;
+    font-weight: 500;
+}
+
+.pade-defender >a {
+    color: var(--black-color) !important;
+}
+
+
+/* send message button */
+.send-message {
+    width: 100%;
+    padding: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--section-title);
+    background-color: #C5C5C5;
+    border: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+.other-listing {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+
+}
+
+
+.other-listing-right-item {
+    display: flex;
+    gap: 2rem;
+}
+
+.other-listing-left-item {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.other-listing-left-item a {
+    color: var(--white-color);
+    transition: 0.3s;
+    font-size: 22px;
+}
+
+.other-listing-left-item a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Icon check  */
+
+.icon-check {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon-check>span {
+    color: var(--primary-color);
+}
+
+.icon-check>a {
+    color: #C5C5C5;
+    line-height: 18px;
+    width: 75%;
+    text-transform: capitalize;
+}
+
+
+
+/* Property Detail */
+
+.property-detail {
+    padding: 4px auto;
+    text-align: center;
+    margin: 1.2rem 0;
+}
+
+.property-detail p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.property-detail h5 {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 12px !important;
+}
+
+.property-detail:nth-child(1),
+.property-detail:nth-child(2),
+.property-detail:nth-child(3) {
+    border-right: 1px dotted var(--section-title);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+
+    .other-listing-right-item {
+        gap: 0.9rem !important;
+    }
+
+    .other-listing-left-item a {
+        font-size: 20px;
+    }
+
+    .symbol-shelf i {
+        font-size: 20px !important;
+    }
+
+    .symbol-shelf p {
+        font-size: 18px !important;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .other-listing-right-item {
+        gap: 0.9rem !important;
+    }
+
+    .other-listing-left-item a {
+        font-size: 18px;
+    }
+
+    .symbol-shelf {
+        gap: 0.6rem;
+    }
+
+    .symbol-shelf i {
+        font-size: 18px !important;
+    }
+
+    .symbol-shelf p {
+        font-size: 17px !important;
+    }
+    .property-detail {
+        margin: 1.2rem 0;
+    }
+    
+    .property-detail p {
+        font-size: 13px;
+    }
+    
+    .property-detail h5 {
+        font-size: 19px;
+        margin-top: 8px !important;
+    }
+    
+}
+
+
 @media (max-width: 992px) {
-    .symbolshelf {
-        gap: 5px;
+    .symbol-shelf {
+        gap: 0.6rem;
     }
 
-    .symbolshelf i,
-    .symbolshelf p {
-        font-size: 12px;
-        text-transform: uppercase;
-        font-weight: 600;
+    .section-title{
+        font-size: 3rem ;
+    }
+    
+    .symbol-shelf i,
+    .symbol-shelf p {
+        font-size: 14px;
+    }
+
+    .other-listing-right-item {
+        gap: 0.5rem;
+    }
+
+    .other-listing-left-item {
+        justify-content: flex-start;
+    }
+
+
+
+
+}
+
+@media (max-width: 767px) {
+    .symbol-shelf i,
+    .symbol-shelf p {
+        font-size: 12px !important;
+    }
+    .other-listing-right-item {
+        flex-wrap: wrap;
+    }
+    .icon-check {
+        gap: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .icon-check>a {
+        width: 90%;
+    }
+    .heading,
+.heading1 {
+    font-size: 1.7rem;
+}
+.section-title{
+    font-size: 2rem ;
+}
+
+}
+
+@media (max-width: 525px) {
+    .SocialLinks a {
+        font-size: 16px;
+        margin: 0 4px;
+    }
+
+    .main-button {
+        margin-top: 2.5rem;
     }
 }
 
 
-
-
-
-
-
-/* Card styles */
-.cardHeading {
-    text-transform: uppercase;
-}
-
-.cardTitle {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-
-
-
-/* PageDefender */
-.PageDefender{
-    font-size: 14px;
-    margin: 2rem 0 !important;
+@media (max-width: 400px) {
+    
+    .main-button {
+        margin-top: 2rem;
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+    .heading,
+    .heading1 {
+        font-size: 1.4rem;
+    }
+    
 }

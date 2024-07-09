@@ -1,19 +1,41 @@
+// import React from 'react';
+// import styles from '../Index.module.css';
+// import CardHeading from '@snippets/CardHeading';
+// import MainButton from '@snippets/MainButton';
+
+// function BestPlaces() {
+//     return (
+//         <div>
+//             <div className={styles['best-place']}>
+//                 <div className={`container ${styles['best-place-description']}`}> 
+//                         <p className={styles['best-place-title']}>Best places</p>
+//                     <CardHeading heading="Luxury homes for rent" anotherClass={styles['best-place-heading']} />
+//                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta consectetur ipsa. At cum repellendus earum aut, similique ratione corrupti aliquam quasi, doloribus optio nobis dolorum nisi ab ipsa obcaecati.</p>
+//                     <MainButton anotherClass={styles['best-place-button']} button="Get Started" /> 
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default BestPlaces;
 import React from 'react';
-import styles from '../Home.module.css'; 
+import styles from '../Index.module.css';
 import CardHeading from '@snippets/CardHeading';
 import MainButton from '@snippets/MainButton';
-import CardValue from '../../../snippets/CardValue';
 
 function BestPlaces() {
     return (
-        <div>
-            <div className={styles.bestPlace}> {/* Use CSS module class */}
-                <div className={`container ${styles.bestPlaceInner}`}> {/* Use CSS module class */}
-                    <CardValue title="Best places" />
-                    <CardHeading heading="Luxury homes for rent" anotherclass={styles.bestPlacesHeading} /> {/* Use CSS module class */}
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta consectetur ipsa. At cum repellendus earum aut, similique ratione corrupti aliquam quasi, doloribus optio nobis dolorum nisi ab ipsa obcaecati.</p>
-                    <MainButton anotherclass={styles.bestPlacesBtn} button="Get Started" /> {/* Use CSS module class */}
-                </div>
+        <div className={styles['best-place']}>
+            <div className={`container ${styles['best-place-description']}`}>
+                <p className={styles['best-place-title']}>Best places</p>
+                <CardHeading heading="Luxury homes for rent" anotherClass={styles['best-place-heading']} />
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta consectetur ipsa. At cum repellendus earum aut, similique ratione corrupti aliquam quasi, doloribus optio nobis dolorum nisi ab ipsa obcaecati.</p>
+                <MainButton anotherClass={styles['best-place-button']} button="Get Started" />
+            </div>
+            <div className={styles['best-place-image-container']}>
+                <div className={styles['best-place-image']}></div>
+                <div className={styles['best-place-overlay']}></div>
             </div>
         </div>
     );

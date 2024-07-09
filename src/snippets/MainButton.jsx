@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './snippets.module.css';
+import styles from "@snippets/Snippets.module.css"
 
 const MainButton = (props) => {
     return (
         <div>
-            <button className={`${styles.mainBtn} ${props.anotherclass}`}>{props.button}</button>
+            <button className={`${styles['main-button']} ${props.anotherClass}`}>{props.button}</button>
         </div>
     );
 };

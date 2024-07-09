@@ -10,8 +10,8 @@ module.exports = {
       '@assests': path.resolve(__dirname, 'src/assests'),
       '@snippets': path.resolve(__dirname, 'src/snippets'),
       '@communities': path.resolve(__dirname, 'src/components/communities'),
-      '@newsCard': path.resolve(__dirname, 'src/components/newsCard'),
-      '@aboutInHome': path.resolve(__dirname, 'src/components/aboutInHome'),
+      '@textSection': path.resolve(__dirname, 'src/components/textSection'),
+      '@store': path.resolve(__dirname, 'src/store'),
     },
   },
 }

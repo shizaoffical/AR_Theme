@@ -1,52 +1,45 @@
-.contactForm{
+.contact-form {
     background-color: #EBEBEB;
-    padding: 1rem ;
+    padding: 1rem;
 }
-.contactLeft{
+
+.contact-left {
     display: flex;
     gap: 10px;
     flex-direction: column;
     justify-content: space-between;
-    margin-right:  1.6rem ;
+    margin-right: 1.6rem;
     margin-top: 1.5rem;
+}
 
+.contact-left > p {
+    font-size: 20px;
+    color: #C5C5C5;
+    font-weight: bold;
 }
-.contactLeft > p{
- font-size: 20px;
- color: #C5C5C5;
- font-weight: bold;
+
+.contact-left > h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
 }
-.contactLeft > h1{
- font-size: 3.5rem;
- font-weight: 700;
- color: black;
- margin-bottom: 10px;
+
+.contact-left > div {
+    margin: 1rem 0;
 }
-.contactLeft > div  {
- margin: 1rem 0;
-}
-.contactLeft > div  > label{
+
+.contact-left > div > label {
     font-size: 13px;
     color: #C5C5C5;
-   }
-.sendMessage{
-    width: 100%;
-    padding: 5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 16px;
-    color: var(--section-title);
-    background-color: #C5C5C5;
-    border: transparent;
 }
 
-
-.formInput{
+.form-input {
     padding: 0;
 }
 
-.formInput > input ,
-.formInput > textarea{
+.form-input > input,
+.form-input > textarea {
     width: 100%;
     padding: 0;
     font-size: 18px;
@@ -54,62 +47,132 @@
     color: var(--text-color);
     border: 1.5px solid var(--text-color);
 }
-.formInput > input::placeholder ,
-.formInput > textarea::placeholder{
+
+.form-input > input::placeholder,
+.form-input > textarea::placeholder {
     color: #C5C5C5;
 }
-.formRow{
+
+.form-row {
     margin: 1rem 0;
 }
 
-@media (max-width: 1200px) {
-    .contactLeft > h1{
-     font-size: 2.8rem;
-    }  
-}
-
-@media (max-width: 992px) {
-    .contactLeft{
-        margin-right:  0rem ;
-    
-    }
-}
-
-
-.addresstop{
-    display: flex !important;
-    border: 2px solid red;
-}
-
-.addresstitle{
-    margin: 0 !important;
-    border: 2px solid blue;
-}
-.addressSnip {
+.addresssnip {
     color: black !important;
-    border: 2px solid black;
     text-align: right;
     margin: 0 !important;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-  
-
+    text-align: center;
 }
 
-.addressSnip > a
-p , i{
+.addresssnip > a p,
+i {
     font-size: 14px !important;
     font-weight: 400 !important;
-
-text-transform: capitalize;    color: black !important;
-    border: 2px solid red;
+    text-transform: capitalize;
+    color: black !important;
 }
 
-.addressSnip > a
- i{
+.addresssnip > i {
     background-color: var(--primary-color) !important;
-    padding: 4px !important;
+    padding: 2px 4px !important;
     border-radius: 50% !important;
+    color: var(--white-color) !important;
+    font-size: 12px !important;
+}
+
+.adress-info {
+    margin-bottom: 3rem;
+}
+
+.address-description {
+    font-size: 18px;
+    margin-bottom: 2.4rem !important;
+}
+
+.address-detail-inner {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2.8rem;
+}
+
+.address-detail-inner > span {
+    font-size: 1.6rem;
+}
+
+.address-detail-inner > div > p {
+    color: #A4A4A4;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media (max-width: 1200px) {
+    .address-description {
+        margin-bottom: 2rem !important;
+    }
+
+    .address-detail-inner {
+        margin-bottom: 1.8rem;
+    }
+
+    .contact-left > h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-left {
+        margin-right: 0rem;
+        gap: 1px;
+        margin-top: 0rem;
+    }
+
+    .form-row {
+        margin: 0.4rem 0;
+    }
+
+    .form-input > input,
+    .form-input > textarea {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .address-detail-inner > span {
+        font-size: 1rem;
+    }
+
+    .contact-left > h1 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .contact-left > p {
+        font-size: 12px;
+    }
+
+    .address-detail-inner > div > p {
+        font-size: 14px;
+    }
+
+    .address-description {
+        margin-bottom: 1rem !important;
+    }
+
+    .address-detail-inner {
+        margin-bottom: 1rem;
+    }
+
+    .addresssnip > i {
+        font-size: 10px !important;
+    }
+
+    .addresssnip > a p,
+    i {
+        font-size: 12px !important;
+    }
 }

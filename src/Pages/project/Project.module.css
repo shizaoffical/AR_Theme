@@ -1,0 +1,17 @@
+.project-body{
+    margin: 2rem 0;
+}
+
+
+.check-list {
+    margin: 2rem 0;
+}
+
+.check-list-title {
+    margin: 2rem 0 !important;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 600;
+    color: #A0A0A0;
+    text-transform: capitalize;
+}

@@ -1,0 +1,180 @@
+.icon-text-main {
+    display: flex !important;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-text-body>dt {
+    color: var(--black-color);
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.icon-text-body p {
+    font-size: 13px;
+    color: #CDCDCD;
+    line-height: 13px;
+    width: 250px;
+}
+
+
+.icon-text-icon>span {
+    padding: 12px 24px;
+    font-size: 3.5rem;
+    border: 1px solid #CDCDCD;
+    border-radius: 50%;
+
+    color: #CDCDCD;
+}
+
+
+/* Icon Text float on right  */
+
+.iconTextRight {
+    flex-direction: row-reverse;
+}
+
+.iconTextRight>div dt,
+.iconTextRight>div p {
+    float: right !important;
+    text-align: right !important;
+}
+
+
+.main-heading {
+    color: #A0A0A0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-transform: uppercase;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+/* Who We Are */
+.who-we-are-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.who-we-are-image>img {
+    height: auto;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 83%;
+}
+
+.who-we-are-image-2>img {
+    height: auto;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+}
+
+/* We Center */
+.who-we-are {
+    margin: 3rem 0;
+}
+
+.who-we-are-inner {
+    padding: 3rem 0;
+}
+
+
+
+/* We Default */
+.who-we-are-column,
+.who-we-are-center-column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.who-we-are-center-column {
+    gap: 2.5rem;
+}
+
+.iconTextRightSection {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 3px !important;
+    padding: 0 !important;
+
+}
+
+.iconTextRightSection>div>span {
+    padding: 0 !important;
+    border: transparent !important;
+    margin: 0 !important;
+
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .icon-text-icon>span {
+        padding: 10px 18px;
+        font-size: 2.5rem;
+    }
+
+    .icon-text-body>dt {
+        margin-bottom: 4px;
+        font-size: 16px;
+    }
+
+    .icon-text-body p {
+        font-size: 12px;
+        width: 220px;
+    }
+
+
+
+
+}
+
+
+
+
+@media (max-width: 992px) {
+    .icon-text-icon {
+        margin-bottom: 1.5rem;
+    }
+
+    .who-we-are-image,
+    .who-we-are-image>img,
+    .who-we-are-image-2>img {
+        display: none !important;
+    }
+
+    .who-we-are-column,
+    .who-we-are-center-column {
+        gap: 1.5rem;
+        border: 2px solid transparent;
+    }
+
+
+}
+
+
+
+@media (max-width: 767px) {
+    .who-we-are-inner {
+        padding: 1rem 0;
+    }
+
+}

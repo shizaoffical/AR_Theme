@@ -1,0 +1,325 @@
+.project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.best-place {
+    position: relative;
+    padding: 2rem 0 !important;
+    margin: 4rem 0;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--white-color);
+    align-items: flex-start;
+    background: linear-gradient(to right, #F29F05 65%, transparent 0%);
+    background-size: cover;
+    background-position: center right;
+    z-index: 1;
+    margin-bottom: 7rem;
+}
+
+.best-place-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.best-place-description {
+    text-align: left;
+}
+
+.best-place-heading {
+    font-size: 2.5rem;
+    width: 30%;
+    color: var(--white-color);
+}
+
+.best-place-description p {
+    font-size: 14px;
+    color: var(--white-color);
+    width: 30%;
+}
+
+.best-place-button {
+    background-color: var(--white-color) !important;
+    color: var(--black-color);
+    margin-top: 1rem !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.best-place-image-container {
+    position: absolute;
+    top: 3rem;
+    left: 75%;
+    width: 58%;
+    height: 100%;
+    transform: translateX(-55%);
+    z-index: 2;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.best-place-image {
+    background: url("https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-02.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.best-place-overlay {
+    position: absolute;
+    top: 12px;
+    left: calc(36.5% - 40px);
+    width: 60px;
+    height: 418px;
+    background: var(--black-color);
+    transform-origin: top right;
+    transform: rotate(83.5deg);
+    z-index: -1;
+}
+
+
+
+.image-section {
+    margin: 6rem 0 4rem;
+}
+
+.image-section-heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 1890px) {
+    .best-place-overlay {
+        height: 406px;
+    }
+}
+
+@media (max-width: 1840px) {
+    .best-place-overlay {
+        height: 395px;
+    }
+}
+
+@media (max-width: 1790px) {
+    .best-place-overlay {
+        height: 386px;
+        transform: rotate(83deg);
+
+    }
+}
+
+@media (max-width: 1740px) {
+    .best-place-overlay {
+        height: 376px;
+
+    }
+}
+
+@media (max-width: 1680px) {
+    .best-place-overlay {
+        height: 355px;
+        transform: rotate(82.5deg);
+
+    }
+}
+
+@media (max-width: 1600px) {
+    .best-place-overlay {
+        height: 332px;
+        transform: rotate(82deg);
+
+    }
+}
+
+@media (max-width: 1490px) {
+    .best-place-overlay {
+        height: 311px;
+        transform: rotate(81.7deg);
+
+    }
+}
+
+@media (max-width: 1395px) {
+    .best-place-overlay {
+        height: 297px;
+        transform: rotate(80.8deg);
+
+    }
+}
+
+@media (max-width: 1330px) {
+    .best-place-overlay {
+        height: 280px;
+        transform: rotate(80.2deg);
+
+    }
+}
+
+@media (max-width: 1260px) {
+    .best-place-overlay {
+        height: 262px;
+        transform: rotate(79.5deg);
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .project {
+        gap: 2rem;
+    }
+    .image-section-heading {
+        font-size: 2rem;
+    }
+    .best-place-title {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+
+    .best-place-description {
+        text-align: left;
+    }
+
+    .best-place-heading {
+        font-size: 2.2rem;
+        width: 30%;
+        color: var(--white-color);
+    }
+
+    .best-place-description p {
+        font-size: 13px;
+        color: var(--white-color);
+        width: 30%;
+    }
+
+    .best-place-button {
+        background-color: var(--white-color) !important;
+        color: var(--black-color);
+        margin-top: 1rem !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .best-place-overlay {
+        height: 245px;
+        transform: rotate(79deg);
+
+    }
+}
+
+@media (max-width: 1090px) {
+    .best-place-overlay {
+        height: 220px;
+        transform: rotate(78deg);
+
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .project {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .best-place-image,
+    .best-place-overlay {
+        display: none;
+    }
+
+    .best-place-image-container {
+        top: 0rem;
+        left: 0%;
+        width: 100% !important;
+        transform: translateX(0%);
+    }
+
+    .best-place {
+        margin: 2rem 0;
+        background: linear-gradient(to right, #F29F05 105%, transparent 0%);
+    }
+
+    .best-place-heading {
+        font-size: 2.5rem;
+        width: 60%;
+        color: var(--white-color);
+    }
+
+    .best-place-description p {
+        font-size: 14px;
+        color: var(--white-color);
+        width: 70%;
+    }
+    .image-section {
+        margin: 6rem 0 4rem;
+    }
+    .image-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        width: 100%; /* Ensure it takes full width by default */
+      }
+      
+      .image-section-background {
+        background-image: url('https://www.contemporist.com/wp-content/uploads/2020/08/modern-house-lighting-architecture-260820-1114-01.jpg');
+        background-size: cover;
+        height: 550px;
+        width: 80%;
+      }
+    .image-section-heading {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+    .project {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .best-place-heading {
+        font-size: 2.5rem;
+        width: 95%;
+    }
+
+    .best-place-description p {
+        font-size: 14px;
+        width: 85%;
+    }
+}
+@media (max-width: 890px) {
+
+    .best-place-heading {
+        font-size: 2rem;
+    }
+
+    .best-place-description p {
+        font-size: 14px;
+        width: 95%;
+    }
+}

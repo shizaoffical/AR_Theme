@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './snippets.module.css';
+import styles from "@snippets/Snippets.module.css"
 
 const CardHeading = (props) => {
     return (
         <div>
-            <h3 className={`${styles.cardHeading} ${props.anotherclass}`}>{props.heading}</h3>
+            <h3 className={`${styles['card-heading']} ${props.anotherClass}`}>{props.heading}</h3>
         </div>
     );
 };

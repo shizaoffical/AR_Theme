@@ -1,90 +1,263 @@
-/* ProjectsCard.module.css */
-
-.projectsCard {
+.project-card {
     position: relative;
-    height: 380px;
-    margin: 1rem 0;
+    height: 460px;
 }
 
-.pcTopLeft {
+.project-card-alert {
     position: absolute;
     top: 20px;
-    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.pcPrice {
+.project-card-alert p {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    padding: 3px 8px;
+    margin-bottom: 12px !important;
+
+    width: fit-content;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.project-card-button {
+    position: absolute;
+    top:30px;
+    left: 30px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: var(--white-color);
+    padding: 3px 45px 3px 20px;
+    border: 2px solid transparent;
+    position: relative;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    
+}
+
+.project-card-button span {
+    background-color: var(--white-color);
+    border-radius: 50%;
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    font-size: 16px;
+    position: absolute;
+    right: -10px !important;
+    border: 2px solid transparent;
+    bottom: 0;
+}
+
+
+
+.project-card-more-detail {
+
+    display: flex;
+    gap: 7px !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+
+    margin-top: 1rem !important;
+}
+
+.project-card-more-detail span,
+.project-card-more-detail a {
+    color: var(--white-color) !important;
+
+    font-weight: 400 !important;
+}
+.project-card-more-detail a {
+    text-transform: capitalize !important;
+    font-size: 12px !important;
+}
+
+.project-card-more-detail span {
+    color: var(--primary-color) !important;
+    background-color: var(--white-color) !important;
+    font-size: 10px !important;
+    border-radius: 50%;
+    padding: 1px 4px;
+
+}
+
+.project-card-description {
+    position: absolute;
+    bottom: 20px;
+    width: 65%;
+    left: 20px;
+}
+
+.project-card-description p {
+    font-size: 12px;
+    width: 210px;
+    color: var(--white-color);
+    line-height: 1.4em;
+}
+.project-card-heading {
     margin-bottom: 0.6rem !important;
     line-height: 28px;
-}
-.pcPrice p {
     color: var(--white-color) !important;
-    font-size: 1.2rem !important;
     text-transform: uppercase;
-
 }
-.pcPrice strong {
-    color: var(--white-color) !important;
-    font-size: 1.4rem;
-    text-transform: uppercase;
 
+.project-card-heading p {
+    font-size: 1.4rem !important;
 }
-.pcBottomLeft {
+
+.project-card-heading strong {
+    font-size: 1.8rem;
+}
+.project-card-links {
     position: absolute;
     bottom: 20px;
-    width:65%;
-    left: 5px;
-}
-
-.pcBottomLeft p {
-    font-size: 12px;
-    color: var(--white-color);
-    line-height: 1.3em ;
-}
-
-.pcBottomRight {
-    position: absolute;
-    bottom: 20px;
-    right: -12px !important;
+    right: 0px !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
 }
-.pcBottomRight p {
+
+.project-card-links p {
     font-size: 10px;
     color: var(--white-color);
     line-height: 1.2 !important;
 }
 
-@media (max-width: 992px) {
-    .pcBottomLeft {
-        position: absolute;
-        bottom: 80px;
-        left: 10px;
-    }
+
+
+
+/*  Simple Card  */
+
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+
 }
 
-.pcInvestButton {
-    background-color: var(--primary-color);
-    border-radius: 20px;
-    color: var(--white-color);
-    padding: 2px 28px 2px 8px;
-    border: 2px solid transparent;
-    position: relative;
+.card-image {
+    width: 100%;
+    height: 400px !important;
+
 }
 
-.pcInvestButton span {
+.card-inner {
+    padding: 2rem 0;
+    text-align: center;
     background-color: var(--white-color);
-    border-radius: 50%;
-    color: var(--dark-bg-color);
-    padding: 1px 5px;
-    position: absolute;
-    right: -12px !important;
-    border: 2px solid transparent;
-    bottom: 0;
+
 }
-@media (max-width: 550px) {
-    .pcBottomLeft {
-        width:95%;
+
+.card-inner>h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px !important;
+}
+
+.card-inner>p {
+    font-size: 14px;
+    color: var(--section-title);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+    .project-card {
+        height: 400px;
     }
+    
+    .project-card-description p {
+        font-size: 11px;
+        width: 180px;
+    }
+    
+    .project-card-heading p {
+        font-size: 1.2rem !important;
+    }
+    
+    .project-card-heading strong {
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+@media (max-width: 1200px) {
+    .project-card {
+        height: 380px;
+    }
+    .project-card-button {
+        left: 20px;
+        padding: 3px 32px 3px 10px;
+        font-size: 15px !important;
+    }
+    .project-card-button span {
+        padding: 2px 7px;
+        font-size: 14px;
+    }
+    
+    .project-card-description p {
+        font-size: 10px;
+        width: 150px;
+    }
+    
+    .project-card-heading p {
+        font-size: 1.2rem !important;
+    }
+    
+    .project-card-heading strong {
+        font-size: 1.3em;
+    }
+    
+}
+
+
+
+
+@media (max-width: 550px) {
+    .project-card-description {
+        width: 95%;
+    }
+
+    /* src/Popup.module.css */
+    .popup-overlay {
+        padding: 2rem ;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* src/Popup.module.css */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 9999;
+    align-items: center;
 }

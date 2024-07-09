@@ -2,11 +2,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebook, FaLinkedin, FaWhatsapp, FaTwitter } from 'react-icons/fa';
-import styles from './snippets.module.css';
+import styles from "@snippets/Snippets.module.css"
 
 function SocialLinks(props) {
     return (
-        <div className={styles.headerSocialLinks}> {/* Use CSS module class */}
+        <div className={styles.SocialLinks}> {/* Use CSS module class */}
             {props.facebook && <Link to="" target="_blank"><FaFacebook /></Link>}
             {props.twitter && <Link to="" target="_blank"><FaTwitter /></Link>}
             {props.instagram && <Link to="" target="_blank"><FaInstagram /></Link>}

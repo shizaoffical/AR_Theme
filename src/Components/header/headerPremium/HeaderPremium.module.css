@@ -1,38 +1,8 @@
-/* HeaderPremium.module.css */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Header Premium */
 .headerPremium {
-    background-color: var(--dark-bg-color);
+    background-color: var(--secondary-color);
 }
 
 .headerPremiumTopHeader {
@@ -58,17 +28,7 @@
     color: var(--primary-color);
 }
 
-@media (max-width: 992px) {
-    .headerDefaultLeft {
-        gap: 1rem;
-    }
-}
 
-@media (max-width: 550px) {
-    .headerDefaultLeft a span {
-        display: none;
-    }
-}
 
 /* Navbar Premium */
 .navbar {
@@ -89,7 +49,7 @@
 }
 
 .dropdownMenu {
-    background-color: var(--dark-bg-color) !important;
+    background-color: var(--secondary-color) !important;
     border: transparent !important;
     border-radius: none !important;
 }
@@ -117,4 +77,15 @@
 .navbarToggler:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+@media (max-width: 992px) {
+    .headerDefaultLeft {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .headerDefaultLeft a span {
+        display: none;
+    }
 }
